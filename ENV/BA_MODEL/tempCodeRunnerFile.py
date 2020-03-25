@@ -1,1 +1,0 @@
-if iterator1 < iterator2:

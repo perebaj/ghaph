@@ -31,8 +31,7 @@ def plot_graph(array):
     plt.title("Distribuição de Graus")
     minvalue = np.min(array)
     maxvalue = np.max(array)
-    bins = np.arange(minvalue, maxvalue + 2) #número de caixas que o histograma vai comportar
-    # print(bins)
+    bins = np.arange(minvalue, maxvalue + 2)
     plt.hist(array, bins,density=True, facecolor='g', alpha=0.75)
     plt.grid(True)
     plt.show()

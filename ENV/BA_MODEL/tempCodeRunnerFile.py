@@ -1,2 +1,1 @@
-print("Grau:",a1)
-# print("Frequencia:",a2)
+if iterator1 < iterator2:

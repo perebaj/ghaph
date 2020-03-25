@@ -92,8 +92,8 @@ class graph:
     def grau_nodes(self):
         array = [0]*self.num_Nodes
         for iterator in range(self.num_Nodes):
-            # array[iterator] = len(self.lista_Adicionados[iterator])
-            array[iterator] = self.listaAdj[iterator]._size
+            array[iterator] = len(self.lista_Adicionados[iterator])
+            # array[iterator] = self.listaAdj[iterator]._size
         return array
 
     def scale_free_graph(self, n, k):
@@ -116,7 +116,14 @@ class graph:
 
 Grafo = graph(10000)
 Grafo.init_Graph()
-Grafo.scale_free_graph(6, 3)
+Grafo.random_Graph(0.1)
+# Grafo.print_grapf()
+# Grafo.scale_free_graph(6, 3)
 array = Grafo.grau_nodes()
-plot_free_scale_graph(array)
+# print(array)
+print(statistics.mean(array))
+plot_graph(array)
+# plot_free_scale_graph(array)
+
+
 

@@ -80,9 +80,10 @@ class Grafo:
                     array[iterator1] += 1
         return array
 
-g1 = Grafo(10, 0.3, random=True)
-g1.print_MatrizAdj()
+g1 = Grafo(10000, 0.1, random=True)
+# g1.print_MatrizAdj()
 array = g1.sum_Matriz()
+print(statistics.mean(array))
 plot_graph(array)
 # print(array)
 # print(statistics.mean(array))

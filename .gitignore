@@ -1,1 +1,3 @@
 */lib
+.pytest_cache/
+.vscode/

@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import statistics
 import math
 import numpy as np
+
 class graph:
     def __init__(self, _num_Nodes):
         self.listaAdj = []
@@ -87,7 +88,7 @@ class graph:
             
   
 
-Grafo = graph(1000)
+Grafo = graph(10000)
 Grafo.init_Graph()
 Grafo.scale_free_graph(6,3)
 array = Grafo.grau_nodes()

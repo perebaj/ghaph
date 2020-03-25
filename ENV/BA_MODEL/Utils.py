@@ -45,10 +45,11 @@ def define_edges_link(population, weight, _k):
 
 def plot_free_scale_graph(array):
     number_of_connections, frequency = np.unique(array, return_counts=True)
+    plt.style.use("ggplot")
     plt.xscale("log")
     plt.xlabel("Número de conexões")
     plt.ylabel("Frequência log(x)")
     plt.title("Distribuição de Graus - scale-free-graph")
-    plt.plot(number_of_connections, frequency, "^")
+    plt.plot(number_of_connections, frequency, "^", color="C12", alpha=1)
     plt.grid(True)
     plt.show()

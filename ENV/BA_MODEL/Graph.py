@@ -114,16 +114,16 @@ class graph:
                     self.add_Aresta(iterator1, iterator2)
 
 
-Grafo = graph(10000)
+Grafo = graph(1000)
 Grafo.init_Graph()
-Grafo.random_Graph(0.1)
+# Grafo.random_Graph(0.1)
 # Grafo.print_grapf()
-# Grafo.scale_free_graph(6, 3)
+Grafo.scale_free_graph(6, 2)
 array = Grafo.grau_nodes()
 # print(array)
 print(statistics.mean(array))
-plot_graph(array)
-# plot_free_scale_graph(array)
+# plot_graph(array)
+plot_free_scale_graph(array)
 
 
 

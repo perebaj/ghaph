@@ -9,7 +9,7 @@ matplotlib==3.2.1
 mccabe==0.6.1
 network==0.1
 networkx==2.4
-numpy==1.18.2
+numpy==1.22.0
 pycodestyle==2.5.0
 pylint==2.4.4
 pyparsing==2.4.6
